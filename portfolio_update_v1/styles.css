@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 1;
 }
 .nav {
   display: flex;
@@ -55,17 +56,36 @@ a:hover {
   color: white
 }
 
+#video-header{
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  z-index: 0;
+  background-size: cover;
+  padding-top: 54px;
+  position: static;
+
+}
+#video-header video{
+ margin-top: -300px;
+  width: 100%;
+  z-index: 0;
+  opacity: .55
+}
+
+
+
 header {
   text-align: center;
   background: linear-gradient(90deg, #43cea2, #185a9d),
               url('images/bckrnd.jpg') no-repeat;
   background-blend-mode: multiply;
- background-position: center;
+  background-position: center;
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 25px;
 
 }
+
+
 header {
   line-height: 1.5;
 }
@@ -98,6 +118,18 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
+  min-width: 400px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card-two{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  min-width: 400px;
   max-width: 500px;
   text-align: left;
   background: #fff;
@@ -106,7 +138,19 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  -webkit-animation: random 5s infinite;
+   animation: random 5s infinite;
+}
+.card-two:hover{
+  -webkit-animation: random 5s infinite;
+   animation: random 5s infinite;
+}
+@keyframes  random {
+    60% { border-color: blue; }
+    75% { border-color: white; }
+}
+.contain{
+  width: 45%
 }
 
 ul.skills {
@@ -169,6 +213,7 @@ a.github {
 }
 a.social:hover {
   opacity: 1;
+  transform: scale(1.9) rotate(5deg);
 }
 .clearfix {
   clear: both;
@@ -209,5 +254,27 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
+
+
+
+  .container {
+    width: 100%;
+    background-color: #ddd;
+  }
+
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  .html {width: 95%; background-color: #4CAF50;}
+  .css {width: 90%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .python {width: 65%; background-color: #f44336;}
+  .powershell {width: 65%; background-color: #2196F3;}
+  .bootstrap {width: 90%; background-color: #4CAF50;}
+
 
 }
