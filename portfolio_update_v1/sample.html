@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aaron's Web Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css"
+</head>
+<body>
+
+<header class="jumbotron text-center" id="topHeader" style="margin-bottom:0">
+  <h1>Aaron's Web Resume</h1>
+  <p>Fully Responsive resize this responsive page to see the effect!</p>
+</header>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Nav Links</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" >Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="experience.html" >Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="landingPage.html" >Landing Page</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid" style="margin-top:30px" id="main">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div ><img src="./images/rsz_profile.jpg" class="small-img" alt="Image of me"></div>
+      <p>Hi I am Aaron and I am a tech junky. From new technoligies to creating web application. If it out their I want to learn it and use it to make something to change the world</p>
+      <h3>Some Links</h3>
+      <p>nothing speacil but wanted to use javascript to change the link that is mouseover to become the active class    <button id="alert">Click to See Code</button></p>
+      <hr>
+      <div class="highlighter">
+        <ul class="nav nav-pills flex-column" >
+          <li class="nav-item" >
+            <a class="nav-link" id="Active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Active" href="experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Active" href="landingPage.html">Landing Page</a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+  <div class="col-sm-8" id="table">
+    <div>
+      <h1>Table Creator</h1>
+      <p>You can create up to 3 users to enter into the table</p>
+  </div>
+      <h2>Onboarding Users</h2>
+      <p>Firstname: </p><input type="text" name="firstname" id="firstname">
+      <p>Lastname: </p><input type="text" name="lastname" id="lastname">
+      <p>Email: </p><input type="text" name="email" id="email">
+      <br><br>
+      <button id="addInfo">Enter info</button>
+      <br><br>
+      <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Fistname</th>
+      <th scope="col">Lastname</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="FN">
+      <th scope="row" >1</th>
+
+
+    </tr>
+    <tr id="LN">
+      <th scope="row" >2</th>
+
+
+    </tr>
+    <tr id="EM">
+      <th scope="row" >3</th>
+
+
+    </tr>
+  </tbody>
+</table>
+<br><br>
+
+  </div>
+</div>
+</div>
+<div class="jumbotron text-center" id="footer" style="margin-bottom:0">
+
+  <p>Footer</p>
+</div>
+  <script src="./js/app2.js"></script>
+  <script src="./js/linkHighlighter.js"></script>
+
+</body>
+</html>

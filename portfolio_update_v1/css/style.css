@@ -1,0 +1,92 @@
+.container-fluid{
+	padding: 55px;
+
+}
+
+
+
+
+h2{
+	color: black;
+}
+#topHeader{
+	background-image: url("http://placeimg.com/1000/680/tech");
+	background-size: fill;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	background-size: 100%;
+	opacity: 0.9;
+
+
+}
+
+#topHeader:hover{
+	 opacity: 1.0;
+
+}
+
+header p{
+	text-shadow: 1px 1px 2px red;
+	font-size: 15px;
+}
+
+h1{
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+.small-img{
+	margin: 15px;
+  	height: 150px;
+  	border-radius: 50%;
+  	border: 3px solid white;
+    transition: all .8s;
+}
+
+.small-img:hover {
+  transform: scale(1.5) rotate(720deg);
+}
+
+
+.card{
+	margin: 85px;
+	background-color: lightgrey;
+}
+
+.card-body{
+	padding 25px;
+}
+
+input{
+	width: 400px;
+}
+
+body{
+	background-color: #d3deba;
+}
+
+#createuser{
+	background-color: white;
+}
+
+
+
+
+#alert{
+	margin: 5px;
+}
+
+#footer{
+
+margin-bottom: 0px;
+background-color: #3c3c3c;
+background-size: fill;
+background-repeat: no-repeat;
+background-position: center;
+color : white;
+background-size: 100%
+}
+#login{
+	background-color: white;
+}
