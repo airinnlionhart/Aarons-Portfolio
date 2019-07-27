@@ -50,16 +50,24 @@ h1{
 
 
 .card{
-	margin: 85px;
+	margin: 95px;
 	background-color: lightgrey;
+	border-color: black;
+	border-width: medium;
 }
 
-.card-body{
-	padding 25px;
+#inline input{
+	display: inline-block;
+	width: 25px;
+	margin-left: 5px;
 }
+
 
 input{
-	width: 400px;
+	width: 90%;
+	margin: 5px;
+	margin-top: -15px;
+
 }
 
 body{
@@ -79,6 +87,7 @@ body{
 
 #footer{
 
+
 margin-bottom: 0px;
 background-color: #3c3c3c;
 background-size: fill;
@@ -87,6 +96,65 @@ background-position: center;
 color : white;
 background-size: 100%
 }
+
+#footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+
+#footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+a.linkedin {
+	background-image: url(../images/linkedin.svg);
+}
+a.github {
+	background-image: url(../images/github.svg);
+}
+a.social:hover {
+	opacity: 1;
+	transform: scale(1.9) rotate(5deg);
+}
+
+
 #login{
 	background-color: white;
 }
+
+input[type=checkbox]{
+	display: inline-block;
+};
+
+
+
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }

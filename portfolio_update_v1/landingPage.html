@@ -16,6 +16,26 @@
   <p>Resize this responsive page to see the effect!</p>
 </div>
 
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Nav Links</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" >Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="experience.html" >Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="landingPage.html" >Landing Page</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container.fluid" id="createuser">
   <div class="row">
     <div class="col-sm">
@@ -24,10 +44,11 @@
       <div class="card" style="width: 28rem;">
         <div class="card-body">
           <h5 class="card-title">Create user </h5>
-          <p>User Name: <input type="text" name="createusername" id="createuser"></p>
-          <p>Password:   <input type="text" name="createpassword" id="createpassword"></p>
-          <p>Email:   <input type="text"></p>
-          <p>Would you like to recive emails about updates   <input type="checkbox" ></p>
+          <p>User Name:</p><input type="text" name="createusername" id="createuser" >
+          <p>Password:</p><input type="password" name="createpassword" id="createpassword">
+          <a onmouseover="mouseoverPass();" onmouseout="mouseoutPass();">Show password hover here<a>
+          <p>Email:</p><input type="text" name="email" id="email"><br>
+          <p id="inline">Would you like to recive emails about updates<input type="checkbox"></p>
           <a  class="btn btn-primary" id="myButton" >Create User</a> <a  class="btn btn-primary" href="landingPage.html" > log in </a>
         </div>
       </div>
@@ -42,12 +63,15 @@
     <div class="col-sm">
     </div>
     <div class="col-sm">
-      <div class="card" style="width: 28rem; height:300px;">
+      <div class="card" style="width: 29rem;">
         <div class="card-body">
           <h5 class="card-title">Log in page</h5>
-          <p>User Name: <input type="text" name="username" id="user"></p>
-          <p>Password:   <input type="text" name="password" id="password"></p>
-          <a  class="btn btn-primary" id="myEnter" >Enter</a>
+          <p>User Name: </p><input type="text" name="username" id="user">
+          <p>Password:  </p><input type="password" name="password" id="password">
+          <a onmouseover="mouseoverPass();" onmouseout="mouseoutPass();">Show password hover here<a>
+          <br><br>
+          <a  class="btn btn-primary" id="myEnter" >Enter</a><br>
+          <a>Forgot Password </a>
         </div>
       </div>
       </div>
@@ -56,7 +80,10 @@
   </div>
 </div>
 <div class="jumbotron text-center" id="footer">
-  <p>Footer</p>
+  <ul>
+    <li><a href="http://www.linkedin.com/in/aaron-lenhart-2842167a" class="social linkedin" target="_blank"></a></li>
+    <li><a href="https://github.com/airinnlionhart" class="social github" target="_blank"></a></li>
+  </ul>
 </div>
 <script src="./js/app.js"></script>
 </body>

@@ -24,6 +24,8 @@ if (correctPassword.value == password) {
 	else{
 		correctPassword.style.border = "thick solid red";
 		correctPassword.value = "Opps thats not it try again"
+		var obj = document.getElementById('password');
+		obj.type = "text";
 	}
 });
 
@@ -32,3 +34,19 @@ if (correctPassword.value == password) {
 
 correctPassword.addEventListener('click', () => { correctPassword.value = "" });
 user.addEventListener('click', () => { user.value = "" });
+
+
+
+
+function mouseoverPass(obj) {
+  var objFirst = document.getElementById('createpassword');
+  objFirst.type = "text";
+	var obj = document.getElementById('password');
+  obj.type = "text";
+}
+function mouseoutPass(obj) {
+  var objFirst = document.getElementById('createpassword');
+  objFirst.type = "password";
+	var obj = document.getElementById('password');
+  obj.type = "password";
+}

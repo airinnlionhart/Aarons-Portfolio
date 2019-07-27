@@ -177,11 +177,6 @@ footer {
   padding: 20px 0 40px 20px;
 }
 
-footer .copyright {
-  top: -8px;
-  font-size: .75em;
-}
-
 footer ul {
   list-style-type: none;
   margin: 0;
@@ -202,9 +197,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
